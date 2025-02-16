@@ -1,4 +1,4 @@
-# WahViewer:
+# WahViewer
 A basic image viewer for WahDE
 
 ## Warning:
