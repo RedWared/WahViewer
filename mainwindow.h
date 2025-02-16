@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPixmap>
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,5 +20,8 @@ public:
 
 private:
 	Ui::MainWindow *ui;
+
+private slots:
+    void on_OpenBTN_clicked();
 };
 #endif // MAINWINDOW_H

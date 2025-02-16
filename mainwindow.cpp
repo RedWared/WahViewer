@@ -7,6 +7,15 @@ MainWindow::MainWindow(QWidget *parent)
 	ui->setupUi(this);
 }
 
+void MainWindow::on_OpenBTN_clicked(){
+    QString FilePath = QFileDialog::getOpenFileName(this, "Open images", QDir::homePath(), "Images (*.png *.jpg)");
+
+    if(!FilePath.isEmpty()){
+        QPixmap img(FilePath);
+        ui->DisplayLB->setPixmap(img);
+    }
+}
+
 MainWindow::~MainWindow(){
 	delete ui;
 }
