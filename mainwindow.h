@@ -23,5 +23,8 @@ private:
 
 private slots:
     void on_OpenBTN_clicked();
+    void on_actionOpen_triggered();
+    void on_actionExitApp_triggered();
+    void on_actionCloseIMG_triggered();
 };
 #endif // MAINWINDOW_H

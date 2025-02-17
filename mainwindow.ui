@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>349</width>
-    <height>292</height>
+    <height>309</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QLabel" name="DisplayLB">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>10</y>
-      <width>331</width>
-      <height>211</height>
+      <width>341</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="text">
@@ -33,7 +33,7 @@
    <widget class="QPushButton" name="OpenBTN">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>260</y>
       <width>80</width>
       <height>23</height>
@@ -42,8 +42,85 @@
     <property name="text">
      <string>Open</string>
     </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>349</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFIle">
+    <property name="title">
+     <string>FIle</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionExitApp"/>
+   </widget>
+   <widget class="QMenu" name="menuImage">
+    <property name="title">
+     <string>Image</string>
+    </property>
+    <addaction name="actionCloseIMG"/>
+   </widget>
+   <addaction name="menuFIle"/>
+   <addaction name="menuImage"/>
+  </widget>
+  <action name="actionOpen_image">
+   <property name="text">
+    <string>Open image</string>
+   </property>
+  </action>
+  <action name="actionZoom_in">
+   <property name="text">
+    <string>Zoom in</string>
+   </property>
+  </action>
+  <action name="actionZoom_out">
+   <property name="text">
+    <string>Zoom out</string>
+   </property>
+  </action>
+  <action name="actionReset_zoom">
+   <property name="text">
+    <string>Reset zoom</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionClose_image">
+   <property name="text">
+    <string>Close image</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionExitApp">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCloseIMG">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Close image</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
